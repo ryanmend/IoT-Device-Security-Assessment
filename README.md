@@ -40,3 +40,12 @@ This IoT Device Security Assessment project presents the design and development 
    3.7. [Wireless Interfaces (IDSA-RF)](./src/03_test_cases/wireless_interfaces/README.md)
 
    3.8. [User Interfaces (IDSA-UI)](./src/03_test_cases/user_interfaces/README.md)
+
+
+# Project Collaborators and Acknowledgements
+
+We would like to take this opportunity to acknowledge the contribution of our professor Mandeep Pannu for guiding us into the right direction. This framework would not have been possible without you.
+
+* Amer Al Sous
+* Waleed Kuvailid
+* Ryan Mendoza
