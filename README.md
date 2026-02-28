@@ -21,25 +21,21 @@ This IoT Device Security Assessment project presents the design and development 
 
 3. [**Test Case Catalog**](./src/03_test_cases/README.md)
 
-   3.1. [Processing Units (IDSA-PU)](./src/03_test_cases/processing_units/README.md)
+   3.1. [Firmware (IDSA-FW)](./src/03_test_cases/firmware/README.md)
 
-   3.2. [Memory (IDSA-MEM)](./src/03_test_cases/memory/README.md)
+      3.1.1. [Installed Firmware (IDSA-FW[INST])](./src/03_test_cases/firmware/installed_firmware.md)
 
-   3.3. [Firmware (IDSA-FW)](./src/03_test_cases/firmware/README.md)
+      3.1.1. [Firmware Update Mechnanism (IDSA-FW[UPDT])](./src/03_test_cases/firmware/firmware_update_mechanism.md)
 
-      3.3.1. [Installed Firmware (IDSA-FW[INST])](./src/03_test_cases/firmware/installed_firmware.md)
+   3.2. [Data Exchange Services (IDSA-NET)](./src/03_test_cases/data_exchange_services/README.md)
 
-      3.3.1. [Firmware Update Mechnanism (IDSA-FW[UPDT])](./src/03_test_cases/firmware/firmware_update_mechanism.md)
+   3.3. [Internal Interfaces (IDSA-INT)](./src/03_test_cases/internal_interfaces/README.md)
 
-   3.4. [Data Exchange Services (IDSA-NET)](./src/03_test_cases/data_exchange_services/README.md)
+   3.4. [Physical Interfaces (IDSA-PHY)](./src/03_test_cases/physical_interfaces/README.md)
 
-   3.5. [Internal Interfaces (IDSA-INT)](./src/03_test_cases/internal_interfaces/README.md)
+   3.5. [Wireless Interfaces (IDSA-RF)](./src/03_test_cases/wireless_interfaces/README.md)
 
-   3.6. [Physical Interfaces (IDSA-PHY)](./src/03_test_cases/physical_interfaces/README.md)
-
-   3.7. [Wireless Interfaces (IDSA-RF)](./src/03_test_cases/wireless_interfaces/README.md)
-
-   3.8. [User Interfaces (IDSA-UI)](./src/03_test_cases/user_interfaces/README.md)
+   3.6. [User Interfaces (IDSA-UI)](./src/03_test_cases/user_interfaces/README.md)
 
 
 ## Project Collaborators and Acknowledgements
