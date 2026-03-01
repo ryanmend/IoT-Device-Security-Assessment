@@ -22,7 +22,7 @@ Note: The `Status` column can be set for values similar to "Pass", "Fail", "N/A"
 |-|-|-|-|
 |**IDSA-NET-SCAN**|**Service Discovery**|||
 |IDSA-NET-SCAN-001|Open Port & Service Enumeration||Use nmap to identify listening ports, service versions, and OS fingerprints.|
-|IDSA-NET-SCAN-002|Vulnerability Scanning (NSE)|Use nmap scripting engine (NSE) to check for known CVEs on open services.|
+|IDSA-NET-SCAN-002|Vulnerability Scanning (NSE)||Use nmap scripting engine (NSE) to check for known CVEs on open services.|
 |**IDSA-NET-STRM**|**Stream Encryption**|||
 |IDSA-NET-STRM-001|Encrypted Media Streaming||Use Wireshark to verify if Blink/RPi (WebRTC) streams are encrypted.|
 |IDSA-NET-STRM-002|LAN Data Transmission||Monitor Wi-Fi traffic for unencrypted PII or command packets.|
