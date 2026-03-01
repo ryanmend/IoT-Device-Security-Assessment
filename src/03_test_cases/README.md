@@ -6,7 +6,7 @@
 
    3.1.2. [Firmware Update Mechnanism (IDSA-FW[UPDT])](./firmware/firmware_update_mechanism.md)
 
-3.2. [**Data Exchange Services (IDSA-NET)**](./data_exchange_services/README.md)
+3.2. [**Network Data Services (IDSA-NET)**](./network_data_services/README.md)
 
 3.3. [**Internal Interfaces (IDSA-INT)**](./internal_interfaces/README.md)
 
