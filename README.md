@@ -23,19 +23,15 @@ This IoT Device Security Assessment project presents the design and development 
 
    3.1. [Firmware (IDSA-FW)](./src/03_test_cases/firmware/README.md)
 
-      3.1.1. [Installed Firmware (IDSA-FW[INST])](./src/03_test_cases/firmware/installed_firmware.md)
-
-      3.1.1. [Firmware Update Mechnanism (IDSA-FW[UPDT])](./src/03_test_cases/firmware/firmware_update_mechanism.md)
-
    3.2. [Network Data Services (IDSA-NET)](./src/03_test_cases/network_data_services/README.md)
 
-   3.3. [Internal Interfaces (IDSA-INT)](./src/03_test_cases/internal_interfaces/README.md)
+   3.3. [API & Cloud Integration (IDSA-API)](./src/03_test_cases/api_&_cloud_integration/README.md)
 
-   3.4. [Physical Interfaces (IDSA-PHY)](./src/03_test_cases/physical_interfaces/README.md)
+   3.4. [Physical Interfaces (IDSA-PHYS)](./src/03_test_cases/physical_interfaces/README.md)
 
    3.5. [Wireless Interfaces (IDSA-RF)](./src/03_test_cases/wireless_interfaces/README.md)
 
-   3.6. [User Interfaces (IDSA-UI)](./src/03_test_cases/user_interfaces/README.md)
+   3.6. [Operating System & UI (IDSA-OS)](./src/03_test_cases/os_&_user_interfaces/README.md)
 
 
 ## Project Collaborators and Acknowledgements
