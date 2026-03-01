@@ -43,11 +43,11 @@ Note: The `Status` column can be set for values similar to "Pass", "Fail", "N/A"
 |IDSA-PHYS-002|Unauthorized Peripheral Access||Does plugging it in provide a serial shell or unintended file access?|
 |IDSA-PHYS-003|HID Attack Surface||Can the device be spoofed to act as a keyboard when plugged in?|
 
-## 3.5 Wireless Testing (IDSA-WIFI)
+## 3.5 Wireless Testing (IDSA-RF)
 |Test ID|Test Name|Status|Notes|
 |-|-|-|-|
-|IDSA-WIFI-001|Protocol Analysis (Wireshark)||Verify WPA2/3 implementation and handshake security.|
-|IDSA-WIFI-002|De-authentication Sensitivity||Does the camera stop recording/fail insecurely during a Wi-Fi jam?|
+|IDSA-RF-001|Protocol Analysis (Wireshark)||Verify WPA2/3 implementation and handshake security.|
+|IDSA-RF-002|De-authentication Sensitivity||Does the camera stop recording/fail insecurely during a Wi-Fi jam?|
 
 ## 3.6 Operating System & UI (IDSA-OS)
 |Test ID|Test Name|Status|Notes|
