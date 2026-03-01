@@ -20,6 +20,9 @@ Note: The `Status` column can be set for values similar to "Pass", "Fail", "N/A"
 ## 3.2 Network Data Services (IDSA-NET)
 |Test ID|Test Name|Status|Notes|
 |-|-|-|-|
+|**IDSA-NET-SCAN**|**Service Discovery**|||
+|IDSA-NET-SCAN-001|Open Port & Service Enumeration||Use nmap to identify listening ports, service versions, and OS fingerprints.|
+|IDSA-NET-SCAN-002|Vulnerability Scanning (NSE)|Use nmap scripting engine (NSE) to check for known CVEs on open services.|
 |**IDSA-NET-STRM**|**Stream Encryption**|||
 |IDSA-NET-STRM-001|Encrypted Media Streaming||Use Wireshark to verify if Blink/RPi (WebRTC) streams are encrypted.|
 |IDSA-NET-STRM-002|LAN Data Transmission||Monitor Wi-Fi traffic for unencrypted PII or command packets.|
@@ -49,5 +52,10 @@ Note: The `Status` column can be set for values similar to "Pass", "Fail", "N/A"
 ## 3.6 Operating System & UI (IDSA-OS)
 |Test ID|Test Name|Status|Notes|
 |-|-|-|-|
-|IDSA-OS-001|Raspberry Pi OS Hardening||Check for default pi credentials or unnecessary services.|
-|IDSA-OS-002|Blink App UI Logic||Test for bypasses in the app's lock screen or biometric auth.|
+|**IDSA-OS-HARD**|**System Hardening**|||
+|IDSA-OS-HARD-001|Raspberry Pi OS Hardening||Check for default pi credentials or unnecessary services.|
+|IDSA-OS-HARD-002|Blink App UI Logic||Test for bypasses in the app's lock screen or biometric auth.|
+|**IDSA-OS-CAM**|**Camera Subsystem Security**|||
+|IDSA-OS-CAM-001|Unauthorized Stream Capture||Use picamera2 to see if a secondary script can hijack the camera while the main app is running.|
+|IDSA-OS-CAM-002|Video Injection / Spoofing||Use OpenCV to attempt to inject a pre-recorded video loop into the stream buffer.|
+|IDSA-OS-CAM-003|Buffer Privacy / Local Leaks||Use OpenCV to check if sensitive frames are left in /dev/shm or tmp directories after a capture.|
