@@ -15,7 +15,7 @@ This IoT Device Security Assessment project presents the design and development 
 
    2.1. [IoT Device Model](./src/02_framework/device_model.md)
 
-   2.2. [Attacker Model](./src/02_framework/attacker_model.md)
+   2.2. [Threat Model](./src/02_framework/threat_model.md)
 
    2.3. [Testing Methodology](./src/02_framework/methodology.md)
 
