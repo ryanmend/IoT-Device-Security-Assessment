@@ -15,4 +15,4 @@ Achieving this aim requires not only the development of appropriate technical to
 
 ## Intended Audience
 
-As the name suggests, the IoT Device Security Assessment is mainly intended to be used by students, researchers, or practitioners can adopt. However, others might benefit from the concepts and test cases introduced in this guide as well:
+Our IoT Device Security Assessment framework is mainly intended to be used by students, researchers, or practitioners can adopt. However, others might benefit from the concepts and test cases introduced in this guide as well.
