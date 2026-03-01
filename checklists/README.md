@@ -21,11 +21,11 @@ Note: The `Status` column can be set for values similar to "Pass", "Fail", "N/A"
 |**IDSA-FW-CRYPT**|**Cryptography**|||
 |IDSA-FW-CRYPT-001|Usage of Weak Cryptographic Algorithms|||
 
-## Data Exchange Services (IDSA-NET)
+## Network Data Services (IDSA-NET)
 |Test ID|Test Name|Status|Notes|
 |-|-|-|-|
 |**IDSA-NET-AUTHZ**|**Authorization**|||
-|IDSA-NET-AUTHZ-001|Unauthorized Access to the Data Exchange Service|||
+|IDSA-NET-AUTHZ-001|Unauthorized Access to the Network Data Service|||
 |IDSA-NET-AUTHZ-002|Privilege Escalation|||
 |**IDSA-NET-INFO**|**Information Gathering**|||
 |IDSA-NET-INFO-001|Disclosure of Implementation Details|||
