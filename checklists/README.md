@@ -36,14 +36,14 @@ Note: The `Status` column can be set for values similar to "Pass", "Fail", "N/A"
 |IDSA-API-001|Insecure Cloud Endpoints||Intercept Blink App-to-Cloud API calls (Burp Suite).|
 |IDSA-API-002|Broken Object Level Auth (BOLA)||Can one user access another's stream by changing a Device ID?|
 
-## 3.4 Physical & USB Interface (IDSA-PHYS)
+## 3.4 Physical Interfaces (IDSA-PHYS)
 |Test ID|Test Name|Status|Notes|
 |-|-|-|-|
 |IDSA-PHYS-001|USB Host Detection (Win/Lin/Mac)||Does it mount as a camera/webcam or a storage device?|
 |IDSA-PHYS-002|Unauthorized Peripheral Access||Does plugging it in provide a serial shell or unintended file access?|
 |IDSA-PHYS-003|HID Attack Surface||Can the device be spoofed to act as a keyboard when plugged in?|
 
-## 3.5 Wireless Testing (IDSA-RF)
+## 3.5 Wireless Interfaces (IDSA-RF)
 |Test ID|Test Name|Status|Notes|
 |-|-|-|-|
 |IDSA-RF-001|Protocol Analysis (Wireshark)||Verify WPA2/3 implementation and handshake security.|
@@ -56,6 +56,9 @@ Note: The `Status` column can be set for values similar to "Pass", "Fail", "N/A"
 |IDSA-OS-HARD-001|Raspberry Pi OS Hardening||Check for default pi credentials or unnecessary services.|
 |IDSA-OS-HARD-002|Blink App UI Logic||Test for bypasses in the app's lock screen or biometric auth.|
 |**IDSA-OS-CAM**|**Camera Subsystem Security**|||
+|IDSA-OS-CAM-001|Unauthorized Stream Capture||Use picamera2 to see if a secondary script can hijack the camera while the main app is running.|
+|IDSA-OS-CAM-002|Video Injection / Spoofing||Use OpenCV to attempt to inject a pre-recorded video loop into the stream buffer.|
+|IDSA-OS-CAM-003|Buffer Privacy / Local Leaks||Use OpenCV to check if sensitive frames are left in /dev/shm or tmp directories after a capture.|
 |IDSA-OS-CAM-001|Unauthorized Stream Capture||Use picamera2 to see if a secondary script can hijack the camera while the main app is running.|
 |IDSA-OS-CAM-002|Video Injection / Spoofing||Use OpenCV to attempt to inject a pre-recorded video loop into the stream buffer.|
 |IDSA-OS-CAM-003|Buffer Privacy / Local Leaks||Use OpenCV to check if sensitive frames are left in /dev/shm or tmp directories after a capture.|
