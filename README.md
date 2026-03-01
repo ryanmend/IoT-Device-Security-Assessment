@@ -27,7 +27,7 @@ This IoT Device Security Assessment project presents the design and development 
 
       3.1.1. [Firmware Update Mechnanism (IDSA-FW[UPDT])](./src/03_test_cases/firmware/firmware_update_mechanism.md)
 
-   3.2. [Data Exchange Services (IDSA-NET)](./src/03_test_cases/data_exchange_services/README.md)
+   3.2. [Network Data Services (IDSA-NET)](./src/03_test_cases/network_data_services/README.md)
 
    3.3. [Internal Interfaces (IDSA-INT)](./src/03_test_cases/internal_interfaces/README.md)
 
