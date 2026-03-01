@@ -92,7 +92,7 @@ Another way to expand the catalog is to add custom components, categories and te
         </tr>
         <tr>
             <td>IDSA-NET</td>
-            <td>Data Exchange Service</td>
+            <td>Network Data Services</td>
         </tr>
         <tr>
             <td>IDSA-INT</td>
