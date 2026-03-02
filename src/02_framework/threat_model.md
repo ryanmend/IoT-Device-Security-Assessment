@@ -86,11 +86,11 @@ All in all, the threat model can be used to create an abstract representation of
 | Component                 | PA-4  |   PA-3    |   PA-2    |   PA-1    |
 | ------------------------- | :---: | :-------: | :-------: | :-------: |
 | Firmware        | **✓** | **?** | **?**| **?**|
-| Data Exchange Service     | **✓** | **?**[^4] | **?**[^4] | **?**[^4] |
-| Internal Interface        | **✓** |           |           |           |
+| Network Data Services     | **✓** | **?**[^4] | **?**[^4] | **?**[^4] |
+| API & Cloud Integration   | **✓** |           |           |           |
 | Physical Interface        | **✓** |   **✓**   | **?**[^5] |           |
 | Wireless Interface        | **✓** |   **✓**   |   **✓**   |           |
-| User Interface            | **✓** |   **✓**   | **?**[^6] | **?**[^6] |
+| Operating System & UI     | **✓** |   **✓**   | **?**[^6] | **?**[^6] |
 
 [^4]: Data exchange services might be testable with non-invasive (*PA-3*), local (*PA-2*) or remote physical access (*PA-1*), depending on if they were designed for that kind of access, e.g., for remote control or monitoring purposes.
 
