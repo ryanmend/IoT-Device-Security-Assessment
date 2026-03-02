@@ -92,11 +92,11 @@ All in all, the threat model can be used to create an abstract representation of
 | Wireless Interface        | **✓** |   **✓**   |   **✓**   |           |
 | Operating System & UI     | **✓** |   **✓**   | **?**[^6] | **?**[^6] |
 
-[^4]: Data exchange services might be testable with non-invasive (*PA-3*), local (*PA-2*) or remote physical access (*PA-1*), depending on if they were designed for that kind of access, e.g., for remote control or monitoring purposes.
+[^4]: Network data services might be testable with non-invasive (*PA-3*), local (*PA-2*) or remote physical access (*PA-1*), depending on if they were designed for that kind of access, e.g., for remote control or monitoring purposes.
 
 [^5]: Physical interfaces might be testable with local physical access (*PA-2*) under certain circumstances, e.g., if the physical interface is connected to a local network.
 
-[^6]: User interfaces might be testable with local (*PA-2*) or remote physical access (*PA-1*), depending on if they were designed for that kind of access, e.g., for remote control or monitoring purposes.
+[^6]: OS and UI might be testable with local (*PA-2*) or remote physical access (*PA-1*), depending on if they were designed for that kind of access, e.g., for remote control or monitoring purposes.
 
 
 
