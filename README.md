@@ -61,7 +61,7 @@ Note: The `Status` column can be set for values similar to "Pass", "Fail", "N/A"
 |IDSA-NET-SCAN-002|Vulnerability Scanning (NSE)||Use nmap scripting engine (NSE) to check for known CVEs on open services.|
 |**IDSA-NET-STRM**|**Stream Encryption**|||
 |IDSA-NET-STRM-001|Encrypted Media Streaming||Use Wireshark to verify if Blink/RPi (WebRTC) streams are encrypted.|
-|IDSA-NET-STRM-002|LAN Data Transmission||Monitor Wi-Fi traffic for unencrypted PII or command packets.|
+|IDSA-NET-STRM-002|LAN Data Transmission||Monitor Wi-Fi traffic for unencrypted PII or command packets. **Convert captured packets to images using Foremost.**|
 |**IDSA-NET-AUTH**|**Authentication Security**|||
 |IDSA-NET-AUTH-001|Brute Force / Rainbow Table||Test Blink App login and RPi SSH/Local login for rate limiting.|
 |IDSA-NET-AUTH-002|Phishing & Session Hijacking||Evaluate Blink UI for credential harvesting risks.|
