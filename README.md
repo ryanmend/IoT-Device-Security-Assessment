@@ -47,7 +47,7 @@ The `Severity` column can be set for values similar to "0-5" with 0 as the lowes
 |-|-|-|-|-|
 |**IDSA-FW-INFO**|**Information Gathering**||||
 |IDSA-FW-INFO-001|Disclosure of Source Code and Binaries|||Analyze Blink updates via App; Use binwalk on RPi filesystem/EEPROM.|
-|IDSA-FW-INFO-002|Disclosure of Implementation Details||Check for exposed hardware specs or boot logs.|
+|IDSA-FW-INFO-002|Disclosure of Implementation Details|||Check for exposed hardware specs or boot logs.|
 |**IDSA-FW-CONF**|**Configuration and Patch Management**||||
 |IDSA-FW-CONF-001|Usage of Outdated Software|||Check apt packages on RPi; Verify Blink firmware version in-app.|
 |IDSA-FW-CONF-002|Update Mechanism Security|||Test Blink app-based updates vs. RPi sudo apt full-upgrade security|
