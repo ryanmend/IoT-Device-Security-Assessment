@@ -38,9 +38,9 @@ This IoT Device Security Assessment project presents the design and development 
 
 The following is the list of items to test during the assessment:
 
-Note: The `Status` column can be set for values similar to "Pass", "Fail", "N/A".
+The `Status` column can be set for values similar to "Pass", "Fail", "N/A".
 
-Note: The `Severity` column can be set for values similar to "0-5" with 0 as the lowest to 5 being the highest potential magnitude of harm or damage if a risk event occurs (how bad).
+The `Severity` column can be set for values similar to "0-5" with 0 as the lowest to 5 being the highest potential magnitude of harm or damage if a risk event occurs (how bad).
 
 ## 3.1 Firmware (IDSA-FW)
 |Test ID|Test Name|Status|Severity|Notes|
