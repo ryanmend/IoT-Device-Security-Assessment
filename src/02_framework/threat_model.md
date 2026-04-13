@@ -2,6 +2,8 @@
 
 In this chapter, a selection scheme for test cases will be described, which is based on potential threats that are assumed to be a threat to a given IoT device. Contrary to a full threat and risk modeling approach, like the STRIDE model, the threat model used in this guide presents a more streamlined procedure for defining and selecting threats to IoT devices.
 
+![IoT Threat Model](../img/threat_model_scheme.png)
+
 The reasons for not using a formal threat and risk modeling approach are:
 
 -   Threat and risk modeling is usually focused on one specific implementation design. Thus, the identified threats and risks are based on certain conditions of a given solution or device, which makes it difficult to compare different solutions with each other.
