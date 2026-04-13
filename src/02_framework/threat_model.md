@@ -16,4 +16,37 @@ The rationale for adopting a formal threat and risk modeling is:
 
 ![Attack Vectors](../img/attack_vectors.png)
 
+This diagram provides a comprehensive visualization of the attack surface associated with an **IoT Security Camera**, segmented into three primary domains: **Physical**, **Network**, and **Cloud**. It serves as a foundational reference for conducting a holistic security assessment, ensuring that vulnerabilities are identified across all layers of the device's lifecycle.
+
+### 1. Physical Domain
+This branch addresses threats arising from direct physical access to the hardware. Even if digital defenses are strong, physical proximity allows an attacker to bypass software locks entirely.
+-   **Steal Camera:** Risk of theft leading to loss of surveillance coverage or data exfiltration.
+-   **Tamper with Hardware:** Physical manipulation of sensors, lenses, or internal components (e.g., blocking the lens or altering hardware IDs).
+-   **Modify Firmware:** Accessing the device via physical ports (like UART) to flash malicious firmware or reset security credentials.
+
+### 2. Network Domain
+This branch analyzes vulnerabilities within the communication layer, focusing on how the camera connects to the local environment. It is subdivided into two specific attack vectors:
+-   **Wi-Fi Attacks:** Targets the wireless interface and authentication protocols.
+    -   *Rogue AP:* An attacker sets up a fake access point to lure the camera (or user) into connecting, enabling man-in-the-middle scenarios.
+    -   *Sniff Credentials:* Intercepting unencrypted traffic or weak handshake packets to steal Wi-Fi passwords.
+    -   *Brute Force:* Attempting to guess default administrative credentials often found on consumer IoT devices.
+-   **Local Networks:** Focuses on the security of the Local Area Network (LAN) itself.
+    -   *Network Scan:* Identifying open ports or services exposed on the camera's IP address.
+    -   *Exploit Router:* Compromising the gateway router to gain a pivot point into the internal network where the camera resides.
+
+### 3. Cloud Domain
+This branch evaluates risks associated with remote management, data storage, and backend infrastructure. Since many IoT cameras rely on cloud services for recording and analytics, this layer is critical.
+-   **DDoS Attack:** Overwhelming the device or its cloud endpoint to cause a "Flood camera" state (loss of connectivity).
+-   **Cloud Account:** Targeting the user's account credentials used to manage the device.
+    -   *Credential Stuffing:* Using leaked passwords from other breaches to log into the camera's cloud dashboard.
+-   **Data Breach:** Compromising the storage backend.
+    -   *Access Recordings:* Stealing historical video footage stored in the cloud.
+-   **Man-in-the-Middle (MitM):** Intercepting the encrypted stream between the device and the cloud to "Modify video" or inject frames into the live feed.
+
+### Summary for Assessment Frameworks
+When integrating this diagram into a security assessment framework, evaluators should use it as a checklist to ensure that:
+1.  **Physical Hardening** is tested (e.g., reset buttons, port access).
+2.  **Network Hygiene** is verified (e.g., default passwords, open ports, Wi-Fi encryption).
+3.  **Cloud Posture** is audited (e.g., API security, account MFA, and data encryption at rest/in transit).
+
 [cvss]: https://www.first.org/cvss/	"Common Vulnerability Scoring System"
