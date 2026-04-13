@@ -8,6 +8,24 @@ In comparison to other IoT penetration testing frameworks, this methodology fol
 
 It must be noted that test cases, which apply to multiple components, will not be included in this chapter. The full list of test cases can be found in [3. Test Case Catalog](../03_test_cases/README.md).
 
+## IoT Vulnerability Severity Reference (CVSS v3.1/v4.0)
+
+This table defines how Common Vulnerability Scoring System (CVSS) scores are interpreted specifically for IoT environments, where factors like physical access and firmware update constraints may increase risk.
+
+| Score Range | Severity Level | General Impact Description | IoT-Specific Context & Risk Factors |
+| :---: | :---: | :--- | :--- |
+| **0.0 – 3.9** | **Low** | Minor impact; often requires specific conditions or local access to exploit. | • Firmware update failure<br>• UI/UX glitches<br>• Local-only privilege escalation (e.g., via USB)<br>• *IoT Risk:* Low unless device is in a high-traffic network segment. |
+| **4.0 – 6.9** | **Medium** | Moderate impact; may allow remote denial-of-service or limited data exfiltration. | • Remote DoS (e.g., buffer overflow)<br>• Limited RCE with restricted payload<br>• *IoT Risk:* Medium if device is connected to a LAN that shares resources with critical infrastructure. |
+| **7.0 – 8.9** | **High** | Significant impact; potential for remote code execution or persistent access. | • Remote Code Execution (RCE)<br>• Physical access compromise<br>• *IoT Risk:* High if device controls physical actuators, cameras, or sensors.<br>• *Patching:* Difficult due to constrained resources. |
+| **9.0 – 10.0** | **Critical** | Massive impact; full system takeover or safety-critical failure. | • Full Device Hijack (Botnet recruitment)<br>• Safety-Critical Failure (e.g., medical, industrial control)<br>• *IoT Risk:* Critical if device bridges secure networks to the internet.<br>• *Patching:* Often requires hardware replacement. |
+
+### Key Considerations for IoT Scoring
+1.  **Attack Surface:** A "Medium" score on a smart thermostat is less risky than a "Medium" score on an industrial PLC (Programmable Logic Controller).
+2.  **Update Mechanism:** Devices with no OTA (Over-The-Air) update capability may require hardware replacement for High/Critical fixes, effectively raising the business severity.
+3.  **Physical Proximity:** Vulnerabilities requiring physical access are often scored lower in IoT contexts unless the device is easily accessible to an attacker.
+4.  **Versioning:** Always check if your firmware version matches the CVSS metadata (e.g., CVE-202X-XXXX).
+
+> **Note:** This table aligns with NIST and ISO/IEC standards for IoT risk management. For detailed metric breakdowns, refer to the [NVD](https://nvd.nist.gov/) or vendor-specific advisories.
 
 
 ## Integration Into Other Workflows and Frameworks
