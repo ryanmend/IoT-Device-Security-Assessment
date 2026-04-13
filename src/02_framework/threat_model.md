@@ -1,5 +1,5 @@
 # 2.2. Threat Model
-In this chapter, a selection scheme for test cases will be described, which is based on potential threats identified through a formal threat and risk modeling approach, specifically tailored to the IoT camera being tested in this framework. In alignment with models such as STRIDE, the threat model used in this guide provides a structured framework for defining and selecting threats relevant to the specific architecture and data flows of an IoT camera device.
+In this chapter, a selection scheme for test cases will be described, which is based on potential threats identified through a formal threat and risk modeling approach, specifically tailored to the IoT camera being tested in this framework. The threat model used in this guide provides a structured framework for defining and selecting threats relevant to the specific architecture and data flows of an IoT camera device.
 
 ![IoT Threat Model](../img/threat_model_scheme.png)
 
@@ -44,7 +44,7 @@ This branch evaluates risks associated with remote management, data storage, and
 -   **Man-in-the-Middle (MitM):** Intercepting the encrypted stream between the device and the cloud to "Modify video" or inject frames into the live feed.
 
 ### Summary for Assessment Frameworks
-When integrating this diagram into a security assessment framework, evaluators should use it as a checklist to ensure that:
+When integrating this diagram into the security assessment framework, evaluators should use it as a checklist to ensure that:
 1.  **Physical Hardening** is tested (e.g., reset buttons, port access).
 2.  **Network Hygiene** is verified (e.g., default passwords, open ports, Wi-Fi encryption).
 3.  **Cloud Posture** is audited (e.g., API security, account MFA, and data encryption at rest/in transit).
