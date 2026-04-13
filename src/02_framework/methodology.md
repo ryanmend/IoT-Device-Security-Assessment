@@ -148,13 +148,15 @@ This table defines how Common Vulnerability Scoring System (CVSS) scores are int
 
 Each individual test case, which is represented by a leaf node, is divided into the following sections:
 
--   **Requirements:** The requirements section will define which physical and authorization access levels are required to carry out the test case. Since these requirements also depend on the given test conditions, e.g., the specific implementation of the target device and its operational environment, a range of access levels might be defined which apply to the test case in general.
+-   **Test ID:** A unique identifier assigned to each specific security check (e.g., IOT-001). This allows for precise referencing within reports or automated scanning tools.
 
--   **Summary:** The summary section includes an overall description of the security issue, which the test case is based on.
+-   **Test Name:** A descriptive title of the security check being performed (e.g., "Default Password Verification").
 
--   **Test Objectives:** In the test objectives section, a list of checks that the tester has to perform is given. By performing these checks, the tester can determine whether the device is affected by the security issue described in the summary.
+-   **Status:** The current state of the test execution, such as Pending, In Progress, Passed (vulnerable), Failed (secure), or N/A. This helps testers track progress and identify which checks require immediate attention.
 
--   **Remediation:** The remediation section comprises recommendations regarding potential measures that can be applied to solve the security issue. However, these recommendations are only rough suggestions. It is the responsibility of the manufacturer/operator to derive detailed measures in regards of the device implementation.
+-   **Severity:** An assessment of the potential impact if the vulnerability is exploited, typically aligned with the Common Vulnerability Scoring System (e.g., High, Medium, Low). If a numeric score is used, it should follow CVSS v3.1 or v4.0 standards.
+
+-   **Notes:** Additional context regarding specific implementation details, environmental dependencies, prerequisites, or observations made during the test execution that are not covered in the primary sections.
 
 
 [bsi_pentest]: https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/Studies/Penetration/penetration_pdf.pdf?__blob=publicationFile&v=1	"Study: A Penetration Testing Model"
