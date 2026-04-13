@@ -22,19 +22,7 @@ The following hierarchic levels and types of nodes are defined:
 
   *Short representation: 2 - 5 uppercase alphabetic characters*
 
-  *Examples: IDSA-FW, IDSA-NET, IDSA-INT, IDSA-PHY, IDSA-RF, IDSA-UI*
-
-- **Component Specialization (Optional):** Optional component specializations can be used to define test cases that are only relevant for certain parts or exemplars of a component (e.g., installed firmware - IDSA-FW[INST] - as specialization for the component firmware - IDSA-FW - or SPI - IDSA-INT[SPI] - as specialization for the component internal interface - IDSA-INT).
-
-  By default, component specializations inherit all categories and test cases, defined for their parent node (e.g., all test cases defined for the component firmware - IDSA-FW - are inherited by the specialization installed firmware - IDSA-FW[INST]).
-
-  If required, it is allowed to chain specializations, for example over-the-air firmware updates - IDSA-FW\[UPDT][OTA] - as specialization of firmware update - IDSA-FW[UPDT]. In this case, the second specialization inherits all categories and test cases, defined for the first specialization, thus also inheriting all test cases, defined for the component in general.
-
-  Furthermore, if required, it is also allowed to define a list of categories or test cases, which should be excluded from being inherited by a component specialization.
-
-  *Short representation: 2 - 5 uppercase alphabetic characters in square brackets*
-
-  *Examples: IDSA-FW[INST], IDSA-FW[UPDT]*
+  *Examples: IDSA-FW, IDSA-NET, IDSA-INT, IDSA-API, IDSA-RF, IDSA-OS*
 
 - **Category:** The second main hierarchy level is the category, which can be used to group test cases, e.g., all test cases related to authorization can be grouped in the category AUTHZ.
 
@@ -46,7 +34,7 @@ The following hierarchic levels and types of nodes are defined:
 
   *Short representation: three-digit incremental number of the test case.*
 
-  *Examples: IDSA-FW-INFO-001, IDSA-FW-INFO-002, IDSA-FW-INFO-003*
+  *Examples: IDSA-FW-*-001, IDSA-FW-*-002, IDSA-FW-*-003*
 
 This kind of structure allows to efficiently determine applicable subtrees by deselecting nodes (e.g., components, component specializations and categories) that are not relevant for a given device or test scenario. The table below shows an exemplary list of nodes for each hierarchy level. An overview of all components and categories that are included in this guide can be seen in the figure below the table.
 
@@ -167,8 +155,6 @@ Each individual test case, which is represented by a leaf node, is divided into 
 -   **Test Objectives:** In the test objectives section, a list of checks that the tester has to perform is given. By performing these checks, the tester can determine whether the device is affected by the security issue described in the summary.
 
 -   **Remediation:** The remediation section comprises recommendations regarding potential measures that can be applied to solve the security issue. However, these recommendations are only rough suggestions. It is the responsibility of the manufacturer/operator to derive detailed measures in regards of the device implementation.
-
-
 
 
 [bsi_pentest]: https://www.bsi.bund.de/SharedDocs/Downloads/EN/BSI/Publications/Studies/Penetration/penetration_pdf.pdf?__blob=publicationFile&v=1	"Study: A Penetration Testing Model"
