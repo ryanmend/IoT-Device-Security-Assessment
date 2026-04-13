@@ -43,7 +43,7 @@ This branch evaluates risks associated with remote management, data storage, and
     -   *Access Recordings:* Stealing historical video footage stored in the cloud.
 -   **Man-in-the-Middle (MitM):** Intercepting the encrypted stream between the device and the cloud to "Modify video" or inject frames into the live feed.
 
-### Summary for Assessment Frameworks
+#### Summary for Assessment Frameworks
 When integrating this diagram into the security assessment framework, evaluators should use it as a checklist to ensure that:
 1.  **Physical Hardening** is tested (e.g., reset buttons, port access).
 2.  **Network Hygiene** is verified (e.g., default passwords, open ports, Wi-Fi encryption).
