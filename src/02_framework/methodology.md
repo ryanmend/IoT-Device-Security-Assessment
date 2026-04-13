@@ -149,8 +149,7 @@ Another way to expand the catalog is to add custom components, categories and te
     </tbody>
 </table>
 
-
-![image](../img/Component_Overview.png)
+![Component Overview](src/img/component_overview.png)
 
 ### Structure of Test Cases
 
