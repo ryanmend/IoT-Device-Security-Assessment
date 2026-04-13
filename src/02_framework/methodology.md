@@ -87,115 +87,64 @@ Another way to expand the catalog is to add custom components, categories and te
             <td colspan="2"><b>Component</b></td>
         </tr>
         <tr>
-            <td>ISTG-PROC</td>
-            <td>Processing Unit</td>
-        </tr>
-        <tr>
-            <td>ISTG-MEM</td>
-            <td>Memory</td>
-        </tr>
-        <tr>
-            <td>ISTG-FW</td>
+            <td>IDSA-FW</td>
             <td>Firmware</td>
         </tr>
         <tr>
-            <td>ISTG-DES</td>
-            <td>Data Exchange Service</td>
+            <td>IDSA-NET</td>
+            <td>Network Data Services</td>
         </tr>
         <tr>
-            <td>ISTG-INT</td>
-            <td>Internal Interface</td>
+            <td>IDSA-API</td>
+            <td>API & Cloud Integration</td>
         </tr>
         <tr>
-            <td>ISTG-PHY</td>
-            <td>Physical Interface</td>
+            <td>IDSA-PHYS</td>
+            <td>Physical Interfaces</td>
         </tr>
         <tr>
-            <td>ISTG-WRLS</td>
-            <td>Wireless Interface</td>
+            <td>IDSA-RF</td>
+            <td>Wireless Interfaces</td>
         </tr>
         <tr>
-            <td>ISTG-UI</td>
-            <td>User Interface</td>
-        </tr>
-        <tr>
-            <td>ISTG-*</td>
-            <td>Custom Component <i>(placeholder for future extensions)</i></td>
-        </tr>
-        <tr>
-            <td colspan="2"><b>Component Specialization (Optional)</b></td>
-        </tr>
-        <tr>
-            <td>ISTG-FW[INST]</td>
-            <td>Installed Firmware</td>
-        </tr>
-        <tr>
-            <td>ISTG-FW[UPDT]</td>
-            <td>Firmware Update Mechanism</td>
-        </tr>
-        <tr>
-            <td>ISTG-*[*]</td>
-            <td>Custom Component Specialization <i>(placeholder for future extensions)</i></td>
+            <td>IDSA-OS</td>
+            <td>Operating System & UI </td>
         </tr>
         <tr>
             <td rowspan="10" valign="top">2</td>
             <td colspan="2"><b>Category</b></td>
         </tr>
         <tr>
-            <td>ISTG-*-AUTHZ</td>
-            <td>Authorization</td>
-        </tr>
-        <tr>
-            <td>ISTG-*-INFO</td>
+            <td>IDSA-*-INFO</td>
             <td>Information Gathering</td>
         </tr>
-        <tr>
-            <td>ISTG-*-CRYPT</td>
-            <td>Cryptography</td>
-        </tr>
-        <tr>
-            <td>ISTG-*-SCRT</td>
-            <td>Secrets</td>
-        </tr>
-        <tr>
-            <td>ISTG-*-CONF</td>
+         <tr>
+            <td>IDSA-*-CONF</td>
             <td>Configuration and Patch Management</td>
         </tr>
         <tr>
-            <td>ISTG-*-LOGIC</td>
-            <td>Business Logic</td>
+            <td>IDSA-*-SCRT</td>
+            <td>Secrets</td>
         </tr>
         <tr>
-            <td>ISTG-*-INPV</td>
-            <td>Input Validation</td>
+            <td>IDSA-*-SCAN</td>
+            <td>Service Discovery</td>
         </tr>
         <tr>
-            <td>ISTG-*-SIDEC</td>
-            <td>Side-Channel Attacks</td>
+            <td>IDSA-*-STRM</td>
+            <td>Stream Encryption</td>
         </tr>
         <tr>
-            <td>ISTG-*-*</td>
-            <td>Custom Category <i>(placeholder for future extensions)</i></td>
+            <td>IDSA-*-AUTH</td>
+            <td>Authentication Security</td>
         </tr>
         <tr>
-            <td rowspan="5" valign="top">3</td>
-            <td colspan="2"><b>Test Case</b></td>
+            <td>IDSA-*-HARD</td>
+            <td>System Hardening</td>
         </tr>
         <tr>
-            <td>ISTG-*-INFO-001</td>
-            <td>Disclosure of Source Code and Binaries</td>
-        </tr>
-        <tr>
-            <td>ISTG-*-INFO-002</td>
-            <td>Disclosure of Implementation Details</td>
-        </tr>
-        <tr>
-            <td>ISTG-*-INFO-003</td>
-            <td>Disclosure of Ecosystem Details</td>
-        </tr>
-        <tr>
-            <td>ISTG-*-*-*</td>
-            <td>Custom Test Case <i>(placeholder for future extensions)</i></td>
+            <td>IDSA-*-CAM</td>
+            <td>Camera Subsystem Security</td>
         </tr>
     </tbody>
 </table>
