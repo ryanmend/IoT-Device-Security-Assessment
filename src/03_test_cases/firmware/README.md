@@ -2,7 +2,7 @@ The following is the list of items to test during the firmware assessment:
 
 `Status` column can be set for values similar to "Pass", "Fail", "N/A".
 
-`Severity` column can be set for values "0-10" with 0 as the lowest to 10 being the highest potential magnitude of harm or damage if a risk event occurs (how bad). Refer to the [2.3. Testing Methodology](..../src/framework/methodology.md) for specific CVSS rating.
+`Severity` column can be set for values "0-10" with 0 as the lowest to 10 being the highest potential magnitude of harm or damage if a risk event occurs (how bad). Refer to the [2.3. Testing Methodology](...../src/framework/methodology.md) for specific CVSS rating.
 
 ## 3.1 Firmware (IDSA-FW)
 |Test ID|Test Name|Status|Severity|Notes|
