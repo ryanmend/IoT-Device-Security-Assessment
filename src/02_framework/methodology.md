@@ -83,7 +83,7 @@ Another way to expand the catalog is to add custom components, categories and te
             <td>Root Node</td>
         </tr>
         <tr>
-            <td rowspan="14" valign="top">1</td>
+            <td rowspan="6" valign="top">1</td>
             <td colspan="2"><b>Component</b></td>
         </tr>
         <tr>
@@ -111,7 +111,7 @@ Another way to expand the catalog is to add custom components, categories and te
             <td>Operating System & UI </td>
         </tr>
         <tr>
-            <td rowspan="10" valign="top">2</td>
+            <td rowspan="8" valign="top">2</td>
             <td colspan="2"><b>Category</b></td>
         </tr>
         <tr>
