@@ -1,12 +1,13 @@
 # 2.3. Testing Methodology
 
-In this chapter, a methodology for performing IoT device penetration tests will be described. It is based on the concepts, presented in [2.1. IoT Device Model](./device_model.md) and [2.2. Threat Model](./threat_model.md) and serves as a supplement, which can be used with pre-existing penetration testing workflows and frameworks. The methodology comprises key aspects of testing that have to be performed during an IoT device penetration test. Therefore, it includes a catalog of test cases for each individual device component. As described in the previous chapters, the specific selection of applicable test cases depends on the results of applying the device and threat models, which have been designed in the context of this methodology.
+In this chapter, a methodology for performing **IoT camera penetration tests** will be described. It is based on the concepts presented in [2.1. IoT Device Model](./device_model.md) and [2.2. Threat Model](./threat_model.md) and serves as a supplement that can be used with pre-existing penetration testing workflows and frameworks. The methodology comprises key aspects of testing that have to be performed during an **IoT camera** penetration test. Therefore, it includes a catalog of test cases for each individual device component **and provides a structured checklist designed for easy tracking of testing components**. As described in the previous chapters, the specific selection of applicable test cases depends on the results of applying the device and threat models, which have been designed specifically within the context of this camera-focused methodology.
 
-At first, it will be described how this methodology can be integrated into other workflows and during which steps the models and concepts of this methodology can be used. Then, selected testing techniques will be explained, which can be applied during the test and are not restricted to certain test cases. Finally, the structural concept of the catalog of test cases will be explained.
+At first, it will be described how this methodology can be integrated into other workflows and during which steps the models and concepts of this methodology can be used. **The structured checklist allows testers to systematically verify that all relevant components (such as firmware, network interfaces, optical sensors, or physical enclosures) have been assessed.** Then, selected testing techniques will be explained, which can be applied during the test and are not restricted to certain test cases. Finally, the structural concept of the catalog of test cases will be explained.
 
-In comparison to other IoT penetration testing frameworks, this methodology follows a more generic yet comprehensive approach. It defines test cases for certain security issues that are relevant in the IoT context (key aspects of testing) without being restricted by the details of specific technologies or standards. Thereby, this methodology is more flexible than other frameworks, which is an important benefit given the volatility of the IoT field. Nonetheless, the methodology is applicable to various technologies and provides possibilities for further particularizations.
+In comparison to other IoT penetration testing frameworks, this methodology follows a **specialized yet comprehensive approach tailored specifically for IoT cameras**. It defines test cases for security issues that are highly relevant in the camera context (key aspects of testing) without being restricted by the details of specific technologies or standards. Thereby, this methodology is more flexible than generic frameworks, which is an important benefit given the rapid evolution of camera hardware and software. Nonetheless, the methodology is applicable to various camera technologies and provides possibilities for further particularizations.
 
 It must be noted that test cases, which apply to multiple components, will not be included in this chapter. The full list of test cases can be found in [3. Test Case Catalog](../03_test_cases/README.md).
+
 
 ## Description of the Hierarchic Structure
 
@@ -148,7 +149,7 @@ This table defines how Common Vulnerability Scoring System (CVSS) scores are int
 
 Each individual test case, which is represented by a leaf node, is divided into the following sections:
 
--   **Test ID:** A unique identifier assigned to each specific security check (e.g., IOT-001). This allows for precise referencing within reports or automated scanning tools.
+-   **Test ID:** A unique identifier assigned to each specific security check (e.g., IDSA-*-*). This allows for precise referencing within reports or automated scanning tools.
 
 -   **Test Name:** A descriptive title of the security check being performed (e.g., "Default Password Verification").
 
