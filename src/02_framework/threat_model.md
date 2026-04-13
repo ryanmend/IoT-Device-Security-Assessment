@@ -3,7 +3,7 @@ In this chapter, a selection scheme for test cases will be described, which is b
 
 ![IoT Threat Model](../img/threat_model_scheme.png)
 
-The rationale for adopting a formal threat and risk modeling approach over a streamlined procedure is:
+The rationale for adopting a formal threat and risk modeling is:
 
 -   **Architecture-Specific Depth:** Formal threat and risk modeling allows for a deep analysis of the specific implementation design of the IoT camera. Since cameras often involve complex subsystems (e.g., video encoding, audio processing, local storage, and network interfaces), identified threats are based on precise conditions of the solution, ensuring that high-value risks associated with media streams and persistent connectivity are not overlooked.
 
