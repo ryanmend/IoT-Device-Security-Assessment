@@ -25,7 +25,7 @@ This IoT Device Security Assessment project presents the design and development 
 
    3.2. [Network Data Services (IDSA-NET)](./src/03_test_cases/network_data_services/README.md)
 
-   3.3. [API & Cloud Integration (IDSA-API)](./src/03_test_cases/api_and_cloud/README.md)
+   3.3. [API & Cloud Integration (IDSA-API)](./src/03_test_cases/api_&_cloud/README.md)
 
    3.4. [Physical Interfaces (IDSA-PHYS)](./src/03_test_cases/physical_interfaces/README.md)
 
