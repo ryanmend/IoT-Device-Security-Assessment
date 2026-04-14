@@ -1,6 +1,6 @@
 # Summary
 
-[IoT Device Security Assessment](./README.md)
+[IoT Device Security Assessment](../README.md)
 
 # Introduction
 - [Introduction](./01_introduction/README.md)
