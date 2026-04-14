@@ -20,5 +20,5 @@
   - [Wireless Interfaces (ISTG-RF)](./03_test_cases/wireless_interfaces/README.md)
   - [Operating System & UI (ISTG-OS)](./03_test_cases/user_interfaces/README.md)
 
-[Acknowlegdements](./acknowledgements.md)
+[Acknowledgements](./acknowledgements.md)
 [License](./LICENSE.md)
