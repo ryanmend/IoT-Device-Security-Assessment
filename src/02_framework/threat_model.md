@@ -1,5 +1,5 @@
 # 2.2. Threat Model
-In this chapter, a selection scheme for test cases will be described, which is based on potential threats identified through a formal threat and risk modeling approach, specifically tailored to the IoT camera being tested in this framework. The threat model used in this framework provides a structured framework for defining and selecting threats relevant to the specific architecture and data flows of an IoT camera device.
+This chapter will describe a selection scheme for test cases, which is based on potential threats identified through a formal threat and risk modeling approach, specifically tailored to the IoT camera being tested in this framework. The threat model used in this framework provides a structured framework for defining and selecting threats relevant to the specific architecture and data flows of an IoT camera device.
 
 ![IoT Threat Model](../img/threat_model_scheme.png)
 
