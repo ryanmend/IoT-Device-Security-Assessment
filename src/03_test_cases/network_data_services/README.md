@@ -1,6 +1,4 @@
-# Testing Checklist
-
-The following is the list of items to test during the assessment:
+The following is the list of items to test during the network data services assessment:
 
 `Status` column can be set for values similar to "Pass", "Fail", "N/A".
 
