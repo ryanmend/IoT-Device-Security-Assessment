@@ -1,0 +1,153 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0" version="29.6.6">
+  <diagram name="Page-1" id="VNKxGr-5vX6ETo5LLFJ7">
+    <mxGraphModel dx="1131" dy="664" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="6l6qhi9oTjDWznbuBYYQ-76" edge="1" parent="1" source="6l6qhi9oTjDWznbuBYYQ-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=light-dark(#212528,#212528);fontColor=light-dark(#212528,#212528);labelBackgroundColor=none;" target="6l6qhi9oTjDWznbuBYYQ-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="710" y="160" />
+              <mxPoint x="220" y="160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6l6qhi9oTjDWznbuBYYQ-77" edge="1" parent="1" source="6l6qhi9oTjDWznbuBYYQ-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=light-dark(#212528,#212528);fontColor=light-dark(#212528,#212528);labelBackgroundColor=none;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="710" y="160" />
+              <mxPoint x="410" y="160" />
+            </Array>
+            <mxPoint x="410" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6l6qhi9oTjDWznbuBYYQ-78" edge="1" parent="1" source="6l6qhi9oTjDWznbuBYYQ-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=light-dark(#212528,#212528);fontColor=light-dark(#212528,#212528);labelBackgroundColor=none;" target="6l6qhi9oTjDWznbuBYYQ-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6l6qhi9oTjDWznbuBYYQ-79" edge="1" parent="1" source="6l6qhi9oTjDWznbuBYYQ-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=light-dark(#212528,#212528);fontColor=light-dark(#212528,#212528);labelBackgroundColor=none;" target="6l6qhi9oTjDWznbuBYYQ-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6l6qhi9oTjDWznbuBYYQ-80" edge="1" parent="1" source="6l6qhi9oTjDWznbuBYYQ-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=light-dark(#212528,#212528);fontColor=light-dark(#212528,#212528);labelBackgroundColor=none;" target="6l6qhi9oTjDWznbuBYYQ-56">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="710" y="160" />
+              <mxPoint x="970" y="160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6l6qhi9oTjDWznbuBYYQ-81" edge="1" parent="1" source="6l6qhi9oTjDWznbuBYYQ-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=light-dark(#212528,#212528);fontColor=light-dark(#212528,#212528);labelBackgroundColor=none;" target="6l6qhi9oTjDWznbuBYYQ-68">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="710" y="160" />
+              <mxPoint x="1160" y="160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6l6qhi9oTjDWznbuBYYQ-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=light-dark(#F5F4F6,#F5F4F6);strokeColor=light-dark(#212528,#212528);fontColor=light-dark(#212528,#212528);labelBackgroundColor=none;" value="&lt;div&gt;IoT Device Security Assessment&lt;/div&gt;&lt;div&gt;IDSA&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="340" x="540" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6l6qhi9oTjDWznbuBYYQ-32" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=light-dark(#F5F4F6,#F5F4F6);strokeColor=light-dark(#212528,#212528);fontColor=light-dark(#212528,#212528);labelBackgroundColor=none;" value="&lt;div&gt;API &amp;amp; Cloud Integration&lt;/div&gt;&lt;div&gt;IDSA-API&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="540" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="6l6qhi9oTjDWznbuBYYQ-44" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=light-dark(#F5F4F6,#F5F4F6);strokeColor=light-dark(#212528,#212528);fontColor=light-dark(#212528,#212528);labelBackgroundColor=none;" value="&lt;div&gt;Physical Interfaces&lt;/div&gt;&lt;div&gt;IDSA-PHYS&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="720" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="6l6qhi9oTjDWznbuBYYQ-56" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=light-dark(#F5F4F6,#F5F4F6);strokeColor=light-dark(#212528,#212528);fontColor=light-dark(#212528,#212528);labelBackgroundColor=none;" value="Wireless Interfaces IDSA-RF" vertex="1">
+          <mxGeometry height="60" width="120" x="910" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="6l6qhi9oTjDWznbuBYYQ-8" edge="1" parent="1" source="6l6qhi9oTjDWznbuBYYQ-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=light-dark(#212528,#212528);fontColor=light-dark(#212528,#212528);labelBackgroundColor=none;" target="6l6qhi9oTjDWznbuBYYQ-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="170" y="310" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6l6qhi9oTjDWznbuBYYQ-9" edge="1" parent="1" source="6l6qhi9oTjDWznbuBYYQ-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=light-dark(#212528,#212528);fontColor=light-dark(#212528,#212528);labelBackgroundColor=none;" target="6l6qhi9oTjDWznbuBYYQ-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="170" y="390" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6l6qhi9oTjDWznbuBYYQ-10" edge="1" parent="1" source="6l6qhi9oTjDWznbuBYYQ-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=light-dark(#212528,#212528);fontColor=light-dark(#212528,#212528);labelBackgroundColor=none;" target="6l6qhi9oTjDWznbuBYYQ-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="170" y="470" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6l6qhi9oTjDWznbuBYYQ-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=light-dark(#F5F4F6,#F5F4F6);strokeColor=light-dark(#212528,#212528);fontColor=light-dark(#212528,#212528);labelBackgroundColor=none;" value="&lt;div&gt;Firmware&lt;/div&gt;&lt;div&gt;IDSA-FW&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="160" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="6l6qhi9oTjDWznbuBYYQ-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=light-dark(#F5F4F6,#F5F4F6);strokeColor=light-dark(#212528,#212528);fontColor=light-dark(#212528,#212528);labelBackgroundColor=none;" value="&lt;div&gt;Information Gathering&lt;/div&gt;&lt;div&gt;IDSA-FW-INFO&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="190" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="6l6qhi9oTjDWznbuBYYQ-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=light-dark(#F5F4F6,#F5F4F6);strokeColor=light-dark(#212528,#212528);fontColor=light-dark(#212528,#212528);labelBackgroundColor=none;" value="&lt;div&gt;Configuration and Patch Management&lt;/div&gt;IDSA-FW-CONF" vertex="1">
+          <mxGeometry height="60" width="120" x="190" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="6l6qhi9oTjDWznbuBYYQ-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=light-dark(#F5F4F6,#F5F4F6);strokeColor=light-dark(#212528,#212528);fontColor=light-dark(#212528,#212528);labelBackgroundColor=none;" value="&lt;div&gt;Secrets&lt;/div&gt;IDSA-FW-SCRT" vertex="1">
+          <mxGeometry height="60" width="120" x="190" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="6l6qhi9oTjDWznbuBYYQ-15" edge="1" parent="1" source="6l6qhi9oTjDWznbuBYYQ-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=light-dark(#212528,#212528);fontColor=light-dark(#212528,#212528);labelBackgroundColor=none;" target="6l6qhi9oTjDWznbuBYYQ-21">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="360" y="310" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6l6qhi9oTjDWznbuBYYQ-16" edge="1" parent="1" source="6l6qhi9oTjDWznbuBYYQ-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=light-dark(#212528,#212528);fontColor=light-dark(#212528,#212528);labelBackgroundColor=none;" target="6l6qhi9oTjDWznbuBYYQ-22">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="360" y="390" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6l6qhi9oTjDWznbuBYYQ-17" edge="1" parent="1" source="6l6qhi9oTjDWznbuBYYQ-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=light-dark(#212528,#212528);fontColor=light-dark(#212528,#212528);labelBackgroundColor=none;" target="6l6qhi9oTjDWznbuBYYQ-23">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="360" y="470" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6l6qhi9oTjDWznbuBYYQ-20" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=light-dark(#F5F4F6,#F5F4F6);strokeColor=light-dark(#212528,#212528);fontColor=light-dark(#212528,#212528);labelBackgroundColor=none;" value="&lt;div&gt;Network Data Services&lt;/div&gt;&lt;div&gt;IDSA-NET&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="350" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="6l6qhi9oTjDWznbuBYYQ-21" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=light-dark(#F5F4F6,#F5F4F6);strokeColor=light-dark(#212528,#212528);fontColor=light-dark(#212528,#212528);labelBackgroundColor=none;" value="&lt;div&gt;Service Discovery&lt;/div&gt;&lt;div&gt;IDSA-NET-SCAN&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="380" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="6l6qhi9oTjDWznbuBYYQ-22" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=light-dark(#F5F4F6,#F5F4F6);strokeColor=light-dark(#212528,#212528);fontColor=light-dark(#212528,#212528);labelBackgroundColor=none;" value="&lt;div&gt;Stream Encryption&lt;/div&gt;&lt;div&gt;IDSA-NET-STRM&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="380" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="6l6qhi9oTjDWznbuBYYQ-23" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=light-dark(#F5F4F6,#F5F4F6);strokeColor=light-dark(#212528,#212528);fontColor=light-dark(#212528,#212528);labelBackgroundColor=none;" value="&lt;div&gt;Authentication Security&lt;/div&gt;&lt;div&gt;IDSA-NET-AUTH&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="380" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="6l6qhi9oTjDWznbuBYYQ-74" edge="1" parent="1" source="6l6qhi9oTjDWznbuBYYQ-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeColor=light-dark(#212528,#212528);fontColor=light-dark(#212528,#212528);labelBackgroundColor=none;" target="6l6qhi9oTjDWznbuBYYQ-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6l6qhi9oTjDWznbuBYYQ-63" edge="1" parent="1" source="6l6qhi9oTjDWznbuBYYQ-68" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=light-dark(#212528,#212528);fontColor=light-dark(#212528,#212528);labelBackgroundColor=none;" target="6l6qhi9oTjDWznbuBYYQ-69">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1110" y="310" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6l6qhi9oTjDWznbuBYYQ-64" edge="1" parent="1" source="6l6qhi9oTjDWznbuBYYQ-68" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=light-dark(#212528,#212528);fontColor=light-dark(#212528,#212528);labelBackgroundColor=none;" target="6l6qhi9oTjDWznbuBYYQ-70">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1110" y="390" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6l6qhi9oTjDWznbuBYYQ-68" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=light-dark(#F5F4F6,#F5F4F6);strokeColor=light-dark(#212528,#212528);fontColor=light-dark(#212528,#212528);labelBackgroundColor=none;" value="&lt;div&gt;Operating System &amp;amp; UI&lt;/div&gt;&lt;div&gt;IDSA-OS&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="1100" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="6l6qhi9oTjDWznbuBYYQ-69" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=light-dark(#F5F4F6,#F5F4F6);strokeColor=light-dark(#212528,#212528);fontColor=light-dark(#212528,#212528);labelBackgroundColor=none;" value="&lt;div&gt;System Hardening&lt;/div&gt;IDSA-OS-HARD " vertex="1">
+          <mxGeometry height="60" width="120" x="1130" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="6l6qhi9oTjDWznbuBYYQ-70" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=light-dark(#F5F4F6,#F5F4F6);strokeColor=light-dark(#212528,#212528);fontColor=light-dark(#212528,#212528);labelBackgroundColor=none;" value="&lt;div&gt;Camera Subsystem Security&lt;/div&gt;&lt;div&gt;IDSA-OS-CAM&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="1130" y="360" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
