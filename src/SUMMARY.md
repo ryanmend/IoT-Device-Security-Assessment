@@ -15,10 +15,10 @@
 - [Catalog of Test Cases](./03_test_cases/README.md)
   - [Firmware (ISTG-FW)](./03_test_cases/firmware/README.md)
   - [Network Data Services (ISTG-NET)](./03_test_cases/data_exchange_services/README.md)
-  - [API & Cloud Integration (ISTG-API)](./03_test_cases/api_and_cloud/README.md)
+  - [API & Cloud Integration (ISTG-API)](./03_test_cases/api_&_cloud/README.md)
   - [Physical Interfaces (ISTG-PHY)](./03_test_cases/physical_interfaces/README.md)
   - [Wireless Interfaces (ISTG-RF)](./03_test_cases/wireless_interfaces/README.md)
-  - [Operating System & UI (ISTG-OS)](./03_test_cases/user_interfaces/README.md)
+  - [Operating System & UI (ISTG-OS)](./03_test_cases/os_&_ui/README.md)
 
 [Acknowledgements](../acknowledgements.md)
 [License](../LICENSE.md)
