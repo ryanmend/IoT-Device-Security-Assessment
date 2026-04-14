@@ -31,7 +31,7 @@ This IoT Device Security Assessment project presents the design and development 
 
    3.5. [Wireless Interfaces (IDSA-RF)](./src/03_test_cases/wireless_interfaces/README.md)
 
-   3.6. [Operating System & UI (IDSA-OS)](./src/03_test_cases/os_and_ui/README.md)
+   3.6. [Operating System & UI (IDSA-OS)](./src/03_test_cases/os_&_ui/README.md)
 
 
 # Testing Checklist
