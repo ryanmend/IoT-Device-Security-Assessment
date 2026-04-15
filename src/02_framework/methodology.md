@@ -124,7 +124,7 @@ Another way to expand the catalog is to add custom components, categories and te
     </tbody>
 </table>
 
-![Component Overview](../img/component_overview.png)
+![Component Overview](../img/component_overview_dark.png)
 
 ## IoT Vulnerability Severity Reference (CVSS v3.1/v4.0)
 
