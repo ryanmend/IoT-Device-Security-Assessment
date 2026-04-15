@@ -42,28 +42,40 @@ The following is the list of items to test during the assessment:
 
 `Severity` column can be set for values "0-10" with 0 as the lowest to 10 being the highest potential magnitude of harm or damage if a risk event occurs (how bad). Refer to the [2.3. Testing Methodology](./src/02_framework/methodology.md) for specific CVSS rating.
 
+## 1.0 Setup & Threat Modeling
 | Test ID | Phase / Test Name | Status | Severity | Notes / Evidence |
 | :--- | :--- | :--- | :--- | :--- |
-| **1.0** | **Setup & Threat Modeling** | | | |
 | FR-SETUP-01 | Device Selection & Inventory (FR1, FR2) | | | Verify device specs and firmware version recorded. |
 | FR-MODEL-01 | OWASP IoT Threat Model (FR4, FR5) | | | Ensure attack vectors are identified and documented. |
 | FR-MODEL-02 | Visual Threat Diagram (FR6) | | | Confirm diagram shows all attack surfaces. |
 | FR-MODEL-03 | Threat Impact Rating (FR7) | | | Verify likelihood/impact scores assigned to threats. |
-| **2.0** | **Network & API Testing** | | | |
+
+## 2.0 Network & API Testing
+| Test ID | Phase / Test Name | Status | Severity | Notes / Evidence |
+| :--- | :--- | :--- | :--- | :--- |
 | IDSA-NET-SCAN-01 | Service Discovery & Info (FR3, FR12, FR13) | | | Use Nmap; record all open ports/services found. |
 | IDSA-NET-STRM-01 | Traffic Encryption (FR8, FR9, FR10) | | | Wireshark analysis: check for plaintext/weak TLS. |
 | IDSA-API-TEST-01 | API Interception & Auth (FR15, FR16) | | | Burp Suite: test tokens, session, and validation. |
 | IDSA-API-FUZZ-01 | API Fuzzing & Pattern Logging (FR17, FR18) | | | Run fuzzing; log request/response patterns. |
-| **3.0** | **Firmware Analysis** | | | |
+
+## 3.0 Firmware Analysis
+| Test ID | Phase / Test Name | Status | Severity | Notes / Evidence |
+| :--- | :--- | :--- | :--- | :--- |
 | FR-FW-ACQ-01 | Acquisition & Backup (FR19, FR21) | | | Verify firmware is saved and versioned correctly. |
 | IDSA-FW-EXTRACT-01| Extraction & Binwalk (FR20) | | | Confirm successful filesystem extraction. |
 | IDSA-FW-SCRT-01 | Secrets & Hardcoded Keys (FR22) | | | Search extracted files for keys, passwords, API keys. |
 | IDSA-FW-CONF-01 | Insecure Configs & Libraries (FR23) | | | Check for outdated libraries/insecure settings. |
-| **4.0** | **Correlation & Risk Evaluation** | | | |
+
+## 4.0 Correlation & Risk Evaluation
+| Test ID | Phase / Test Name | Status | Severity | Notes / Evidence |
+| :--- | :--- | :--- | :--- | :--- |
 | FR-CORR-01 | Vulnerability Correlation (FR25, FR26) | | | Cross-reference network findings with firmware results. |
 | FR-RISK-01 | Risk Matrix & Severity (FR27, FR28) | | | Map all identified vulnerabilities to a risk matrix. |
 | FR-MITIG-01 | Mitigation Recommendations (FR29) | | | Develop OWASP-aligned fix strategies. |
-| **5.0** | **Reporting & Deliverables** | | | |
+
+## 5.0 Reporting & Deliverables
+| Test ID | Phase / Test Name | Status | Severity | Notes / Evidence |
+| :--- | :--- | :--- | :--- | :--- |
 | FR-REPT-01 | Technical Report Compilation (FR30, FR32) | | | Final report with all screenshots and logs attached. |
 | FR-REPT-02 | Executive Summary & Presentation (FR31) | | | Prepare non-technical summary for stakeholders. |
 
