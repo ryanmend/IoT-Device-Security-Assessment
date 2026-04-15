@@ -81,7 +81,7 @@ The following is the list of items to test during the assessment:
 
 ## Project Collaborators and Acknowledgements
 
-We would like to take this opportunity to acknowledge the contribution of our professor Mandeep Pannu for guiding us into the right direction. This framework would not have been possible without you.
+We sincerely thank Professor Mandeep Pannu for her mentorship. Her expertise in IoT security, strategic guidance on our presentation, and constant encouragement were fundamental to the success of this assessment framework.
 
 * Amer Al Sous
 * Waleed Kuvailid
