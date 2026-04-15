@@ -7,7 +7,7 @@ This chapter will focus on the IoT device model representing the general struct
 The device model is a combination of all above-mentioned components and can be seen in the figure below. It must be noted that, even though cardinalities were not included for better readability, more than one instance of each component might be built into an IoT device. 
 
 
-![IoT Device Model](../img/device_model_scheme_light.png)
+![IoT Device Model](../img/device_model_scheme_dark.png)
 
 
 Other models, e.g., the ones mentioned in [Related Work](#related-work), include sensors and actors as components of a device. Within this guide, sensors and actors are considered physical, wireless or user interfaces respectively because they enable interactions between device-internal and -external elements or users via physical (e.g., touch sensor, door control) or wireless connections (e.g., microphone, temperature sensor).
