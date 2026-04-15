@@ -19,19 +19,19 @@ This IoT Device Security Assessment project presents the design and development 
 
    2.3. [Testing Methodology](./src/02_framework/methodology.md)
 
-3. [**Test Case Catalog**](./src/03_test_cases/README.md)
+3. [**Catalogue**](./src/03_catalogue/README.md)
 
-   3.1. [Firmware (IDSA-FW)](./src/03_test_cases/firmware/README.md)
+   3.1. [Setup & Threat Modelling](./src/03_catalogue/setup_threat_modelling/README.md)
 
-   3.2. [Network Data Services (IDSA-NET)](./src/03_test_cases/network_data_services/README.md)
+   3.2. [Network, API & Wireless Testing](./src/03_catalogue/network_api_wireless/README.md)
 
-   3.3. [API & Cloud Integration (IDSA-API)](./src/03_test_cases/api_&_cloud/README.md)
+   3.3. [Firmware Analysis](./src/03_catalogue/firmware/README.md)
 
-   3.4. [Physical Interfaces (IDSA-PHYS)](./src/03_test_cases/physical_interfaces/README.md)
+   3.4. [Device Hardware & OS Security](./src/03_catalogue/device_hardware_os/README.md)
 
-   3.5. [Wireless Interfaces (IDSA-RF)](./src/03_test_cases/wireless_interfaces/README.md)
+   3.5. [Correlation & Risk Evaluation](./src/03_catalogue/correlation_risk/README.md)
 
-   3.6. [Operating System & UI (IDSA-OS)](./src/03_test_cases/os_&_ui/README.md)
+   3.6. [Reporting & Deliverables](./src/03_catalogue/reporting_deliverables/README.md)
 
 
 # Testing Checklist
@@ -45,39 +45,47 @@ The following is the list of items to test during the assessment:
 ## 1.0 Setup & Threat Modelling
 | Test ID | Phase / Test Name | Status | Severity | Notes / Evidence |
 | :--- | :--- | :--- | :--- | :--- |
-| IDSA-SETUP-01 | Device Selection & Inventory (FR1, FR2) | | | Verify device specs and firmware version recorded. |
-| IDSA-MODEL-01 | IoT Threat Model (FR4, FR5) | | | Ensure attack vectors are identified and documented. |
-| IDSA-MODEL-02 | Visual Threat Diagram (FR6) | | | Confirm diagram shows all attack surfaces. |
-| IDSA-MODEL-03 | Threat Impact Rating (FR7) | | | Verify likelihood/impact scores assigned to threats. |
+| IDSA-SETUP-01 | Device Selection & Inventory (FR1, FR2) | | | Record device specs, hardware version, and identify exposed boot logs or hardware implementation details. |
+| IDSA-MODEL-01 | IoT Threat Model (FR4, FR5) | | | Map all identified attack vectors (USB, Wi-Fi, Cloud API, Physical) to the threat model. |
+| IDSA-MODEL-02 | Visual Threat Diagram (FR6) | | | Confirm diagram shows all attack surfaces including RPi, Blink App, and Cloud Endpoints. |
+| IDSA-MODEL-03 | Threat Impact Rating (FR7) | | | Assign likelihood/impact scores to identified threats based on technical exploitability. |
 
-## 2.0 Network & API Testing
+## 2.0 Network, API & Wireless Testing
 | Test ID | Phase / Test Name | Status | Severity | Notes / Evidence |
 | :--- | :--- | :--- | :--- | :--- |
-| IDSA-NET-SCAN-01 | Service Discovery & Info (FR3, FR12, FR13) | | | Use Nmap; record all open ports/services found. |
-| IDSA-NET-STRM-01 | Traffic Encryption (FR8, FR9, FR10) | | | Wireshark analysis: check for plaintext/weak TLS. |
-| IDSA-API-TEST-01 | API Interception & Auth (FR15, FR16) | | | Burp Suite: test tokens, session, and validation. |
-| IDSA-API-FUZZ-01 | API Fuzzing & Pattern Logging (FR17, FR18) | | | Run fuzzing; log request/response patterns. |
+| IDSA-NET-SCAN-01 | Service Discovery & Info (FR3, FR12, FR13) | | | **Nmap:** Enumerate open ports, service versions, and OS fingerprints. Use **NSE scripts** to check for known CVEs on identified services. |
+| IDSA-NET-STRM-01 | Traffic Encryption (FR8, FR9, FR10) | | | **Wireshark:** Verify WebRTC/Blink stream encryption. Monitor Wi-Fi for unencrypted PII; use **Foremost** to attempt image recovery from captured packets. |
+| IDSA-NET-RF-01 | Wireless Interface Security (FR14) | | | **Wireshark:** Analyze WPA2/3 handshakes. Perform de-authentication tests to check if the camera fails insecurely or stops recording during jamming. |
+| IDSA-API-TEST-01 | API Interception & Auth (FR15, FR16) | | | **Burp Suite:** Intercept App-to-Cloud calls. Test for **BOLA** (changing Device IDs), session hijacking, and credential harvesting/phishing risks in UI. |
+| IDSA-API-FUZZ-01 | API Fuzzing & Pattern Logging (FR17, FR18) | | | Run fuzzing on endpoints; test Blink App login for **rate limiting** and brute-force resistance. |
 
 ## 3.0 Firmware Analysis
 | Test ID | Phase / Test Name | Status | Severity | Notes / Evidence |
 | :--- | :--- | :--- | :--- | :--- |
-| IDSA-FW-ACQ-01 | Acquisition & Backup (FR19, FR21) | | | Verify firmware is saved and versioned correctly. |
-| IDSA-FW-EXTRACT-01| Extraction & Binwalk (FR20) | | | Confirm successful filesystem extraction. |
-| IDSA-FW-SCRT-01 | Secrets & Hardcoded Keys (FR22) | | | Search extracted files for keys, passwords, API keys. |
-| IDSA-FW-CONF-01 | Insecure Configs & Libraries (FR23) | | | Check for outdated libraries/insecure settings. |
+| IDSA-FW-ACQ-01 | Acquisition & Backup (FR19, FR21) | | | Verify firmware is saved; analyze Blink updates via App and capture RPi boot logs. |
+| IDSA-FW-EXTRACT-01| Extraction & Binwalk (FR20) | | | Use **Binwalk** on RPi filesystem and EEPROM to extract files and identify disclosure of source code or binaries. |
+| IDSA-FW-SCRT-01 | Secrets & Hardcoded Keys (FR22) | | | Search extracted files for hardcoded keys/passwords. Check `/etc/` and config files for unencrypted secrets and local Blink caches. |
+| IDSA-FW-CONF-01 | Insecure Configs & Libraries (FR23) | | | Check `apt` packages on RPi for outdated software. Evaluate security of the update mechanism (Blink App vs. `sudo apt full-upgrade`). |
 
-## 4.0 Correlation & Risk Evaluation
+## 4.0 Device Hardware & OS Security
 | Test ID | Phase / Test Name | Status | Severity | Notes / Evidence |
 | :--- | :--- | :--- | :--- | :--- |
-| IDSA-CORR-01 | Vulnerability Correlation (FR25, FR26) | | | Cross-reference network findings with firmware results. |
-| IDSA-RISK-01 | Risk Matrix & Severity (FR27, FR28) | | | Map all identified vulnerabilities to a risk matrix. |
-| IDSA-MITIG-01 | Mitigation Recommendations (FR29) | | | Develop NIST and FIRST (CVSS) fix strategies. |
+| IDSA-OS-HARD-01 | System Hardening (FR24) | | | Check RPi OS for default `pi` credentials and unnecessary services. Test Blink App UI for bypasses in lock screen or biometric auth. |
+| IDSA-OS-CAM-01 | Camera Subsystem Security (FR25) | | | **OpenCV:** Attempt to hijack the stream via secondary scripts, inject pre-recorded video loops, and check `/dev/shm` or `/tmp` for leaked frames. |
+| IDSA-PHYS-01 | Physical Interface Attack Surface (FR26) | | | **USB Testing:** Check if device mounts as storage/webcam; test for unauthorized serial shells; test if device can be spoofed as an **HID (Keyboard)** attack. |
 
-## 5.0 Reporting & Deliverables
+## 5.0 Correlation & Risk Evaluation
 | Test ID | Phase / Test Name | Status | Severity | Notes / Evidence |
 | :--- | :--- | :--- | :--- | :--- |
-| IDSA-REPT-01 | Technical Report Compilation (FR30, FR32) | | | Final report with all screenshots and logs attached. |
-| IDSA-REPT-02 | Executive Summary & Presentation (FR31) | | | Prepare non-technical summary for stakeholders. |
+| IDSA-CORR-01 | Vulnerability Correlation (FR25, FR26) | | | Cross-reference network findings (e.g., open ports) with firmware findings (e.g., outdated packages). |
+| IDSA-RISK-01 | Risk Matrix & Severity (FR27, FR28) | | | Map all identified vulnerabilities (BOLA, Hardcoded Keys, etc.) to a risk matrix. |
+| IDSA-MITIG-01 | Mitigation Recommendations (FR29) | | | Develop NIST and FIRST (CVSS) fix strategies for all identified risks. |
+
+## 6.0 Reporting & Deliverables
+| Test ID | Phase / Test Name | Status | Severity | Notes / Evidence |
+| :--- | :--- | :--- | :--- | :--- |
+| IDSA-REPT-01 | Technical Report Compilation (FR30, FR32) | | | Final report containing Nmap logs, Wireshark captures, Binwalk extractions, and OpenCV screenshots. |
+| IDSA-REPT-02 | Executive Summary & Presentation (FR31) | | | Prepare non-technical summary of hardware/software risks for stakeholders. |
 
 ## Project Collaborators and Acknowledgements
 
