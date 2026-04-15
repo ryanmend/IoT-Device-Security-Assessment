@@ -34,7 +34,7 @@ This IoT Device Security Assessment project presents the design and development 
    3.6. [Reporting & Deliverables](./src/03_catalogue/reporting_deliverables/README.md)
 
 
-# Testing Checklist
+# Catalogue
 
 The following is the list of items required during the assessment:
 
