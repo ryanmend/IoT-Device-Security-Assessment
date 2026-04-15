@@ -36,7 +36,7 @@ This IoT Device Security Assessment project presents the design and development 
 
 # Testing Checklist
 
-The following is the list of items to test during the assessment:
+The following is the list of items required during the assessment:
 
 `Status` column can be set for values similar to "Pass", "Fail", "N/A".
 
