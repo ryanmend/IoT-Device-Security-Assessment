@@ -42,62 +42,34 @@ The following is the list of items to test during the assessment:
 
 `Severity` column can be set for values "0-10" with 0 as the lowest to 10 being the highest potential magnitude of harm or damage if a risk event occurs (how bad). Refer to the [2.3. Testing Methodology](./src/02_framework/methodology.md) for specific CVSS rating.
 
-## 3.1 Firmware (IDSA-FW)
-|Test ID|Test Name|Status|Severity|Notes|
-|-|-|-|-|-|
-|**IDSA-FW-INFO**|**Information Gathering**||||
-|IDSA-FW-INFO-001|Disclosure of Source Code and Binaries|||Analyze Blink updates via App; Use binwalk on RPi filesystem/EEPROM.|
-|IDSA-FW-INFO-002|Disclosure of Implementation Details|||Check for exposed hardware specs or boot logs.|
-|**IDSA-FW-CONF**|**Configuration and Patch Management**||||
-|IDSA-FW-CONF-001|Usage of Outdated Software|||Check apt packages on RPi; Verify Blink firmware version in-app.|
-|IDSA-FW-CONF-002|Update Mechanism Security|||Test Blink app-based updates vs. RPi sudo apt full-upgrade security|
-|**IDSA-FW-SCRT**|**Secrets**||||
-|IDSA-FW-SCRT-001|Secrets Stored in Public Storage|||Search for hardcoded keys in binwalk extracted files.|
-|IDSA-FW-SCRT-002|Unencrypted Storage of Secrets|||Check /etc/ or config files on RPi; Check local cache for Blink.|
+| Test ID | Phase / Test Name | Status | Severity | Notes / Evidence |
+| :--- | :--- | :--- | :--- | :--- |
+| **1.0** | **Setup & Threat Modeling** | | | |
+| FR-SETUP-01 | Device Selection & Inventory (FR1, FR2) | | | Verify device specs and firmware version recorded. |
+| FR-MODEL-01 | OWASP IoT Threat Model (FR4, FR5) | | | Ensure attack vectors are identified and documented. |
+| FR-MODEL-02 | Visual Threat Diagram (FR6) | | | Confirm diagram shows all attack surfaces. |
+| FR-MODEL-03 | Threat Impact Rating (FR7) | | | Verify likelihood/impact scores assigned to threats. |
 
-## 3.2 Network Data Services (IDSA-NET)
-|Test ID|Test Name|Status|Severity|Notes|
-|-|-|-|-|-|
-|**IDSA-NET-SCAN**|**Service Discovery**||||
-|IDSA-NET-SCAN-001|Open Port & Service Enumeration|||Use nmap to identify listening ports, service versions, and OS fingerprints.|
-|IDSA-NET-SCAN-002|Vulnerability Scanning (NSE)|||Use nmap scripting engine (NSE) to check for known CVEs on open services.|
-|**IDSA-NET-STRM**|**Stream Encryption**||||
-|IDSA-NET-STRM-001|Encrypted Media Streaming|||Use Wireshark to verify if Blink/RPi (WebRTC) streams are encrypted.|
-|IDSA-NET-STRM-002|LAN Data Transmission|||Monitor Wi-Fi traffic for unencrypted PII or command packets. **Convert captured packets to images using Foremost.**|
-|**IDSA-NET-AUTH**|**Authentication Security**||||
-|IDSA-NET-AUTH-001|Brute Force / Rainbow Table|||Test Blink App login and RPi SSH/Local login for rate limiting.|
-|IDSA-NET-AUTH-002|Phishing & Session Hijacking|||Evaluate Blink UI for credential harvesting risks.|
+| **2.0** | **Network & API Testing** | | | |
+| IDSA-NET-SCAN-01 | Service Discovery & Info (FR3, FR12, FR13) | | | Use Nmap; record all open ports/services found. |
+| IDSA-NET-STRM-01 | Traffic Encryption (FR8, FR9, FR10) | | | Wireshark analysis: check for plaintext/weak TLS. |
+| IDSA-API-TEST-01 | API Interception & Auth (FR15, FR16) | | | Burp Suite: test tokens, session, and validation. |
+| IDSA-API-FUZZ-01 | API Fuzzing & Pattern Logging (FR17, FR18) | | | Run fuzzing; log request/response patterns. |
 
-## 3.3 API & Cloud Integration (IDSA-API)
-|Test ID|Test Name|Status|Severity|Notes|
-|-|-|-|-|-|
-|IDSA-API-001|Insecure Cloud Endpoints|||Intercept Blink App-to-Cloud API calls (Burp Suite).|
-|IDSA-API-002|Broken Object Level Auth (BOLA)|||Can one user access another's stream by changing a Device ID?|
+| **3.0** | **Firmware Analysis** | | | |
+| FR-FW-ACQ-01 | Acquisition & Backup (FR19, FR21) | | | Verify firmware is saved and versioned correctly. |
+| IDSA-FW-EXTRACT-01| Extraction & Binwalk (FR20) | | | Confirm successful filesystem extraction. |
+| IDSA-FW-SCRT-01 | Secrets & Hardcoded Keys (FR22) | | | Search extracted files for keys, passwords, API keys. |
+| IDSA-FW-CONF-01 | Insecure Configs & Libraries (FR23) | | | Check for outdated libraries/insecure settings. |
 
-## 3.4 Physical Interfaces (IDSA-PHYS)
-|Test ID|Test Name|Status|Severity|Notes|
-|-|-|-|-|-|
-|IDSA-PHYS-001|USB Host Detection (Win/Lin/Mac)|||Does it mount as a camera/webcam or a storage device?|
-|IDSA-PHYS-002|Unauthorized Peripheral Access|||Does plugging it in provide a serial shell or unintended file access?|
-|IDSA-PHYS-003|HID Attack Surface|||Can the device be spoofed to act as a keyboard when plugged in?|
+| **4.0** | **Correlation & Risk Evaluation** | | | |
+| FR-CORR-01 | Vulnerability Correlation (FR25, FR26) | | | Cross-reference network findings with firmware results. |
+| FR-RISK-01 | Risk Matrix & Severity (FR27, FR28) | | | Map all identified vulnerabilities to a risk matrix. |
+| FR-MITIG-01 | Mitigation Recommendations (FR29) | | | Develop OWASP-aligned fix strategies. |
 
-## 3.5 Wireless Interfaces (IDSA-RF)
-|Test ID|Test Name|Status|Severity|Notes|
-|-|-|-|-|-|
-|IDSA-RF-001|Protocol Analysis (Wireshark)|||Verify WPA2/3 implementation and handshake security.|
-|IDSA-RF-002|De-authentication Sensitivity|||Does the camera stop recording/fail insecurely during a Wi-Fi jam?|
-
-## 3.6 Operating System & UI (IDSA-OS)
-|Test ID|Test Name|Status|Severity|Notes|
-|-|-|-|-|-|
-|**IDSA-OS-HARD**|**System Hardening**||||
-|IDSA-OS-HARD-001|Raspberry Pi OS Hardening|||Check for default pi credentials or unnecessary services.|
-|IDSA-OS-HARD-002|Blink App UI Logic|||Test for bypasses in the app's lock screen or biometric auth.|
-|**IDSA-OS-CAM**|**Camera Subsystem Security**||||
-|IDSA-OS-CAM-001|Unauthorized Stream Capture|||Use OpenCV to see if a secondary script can hijack the camera while the main app is running.|
-|IDSA-OS-CAM-002|Video Injection / Spoofing|||Use OpenCV to attempt to inject a pre-recorded video loop into the stream buffer.|
-|IDSA-OS-CAM-003|Buffer Privacy / Local Leaks|||Use OpenCV to check if sensitive frames are left in /dev/shm or tmp directories after a capture.|
-
+| **5.0** | **Reporting & Deliverables** | | | |
+| FR-REPT-01 | Technical Report Compilation (FR30, FR32) | | | Final report with all screenshots and logs attached. |
+| FR-REPT-02 | Executive Summary & Presentation (FR31) | | | Prepare non-technical summary for stakeholders. |
 
 ## Project Collaborators and Acknowledgements
 
