@@ -9,29 +9,29 @@ This IoT Device Security Assessment project presents the design and development 
 
 ## Table of Contents
 
-1. [**Introduction**](./src/01_introduction/README.md)
+1. [**Introduction**](./lib/01_introduction/README.md)
 
-2. [**IoT Security Testing Framework**](./src/02_framework/README.md)
+2. [**IoT Security Testing Framework**](./lib/02_framework/README.md)
 
-   2.1. [IoT Device Model](./src/02_framework/device_model.md)
+   2.1. [IoT Device Model](./lib/02_framework/device_model.md)
 
-   2.2. [Threat Model](./src/02_framework/threat_model.md)
+   2.2. [Threat Model](./lib/02_framework/threat_model.md)
 
-   2.3. [Testing Methodology](./src/02_framework/methodology.md)
+   2.3. [Testing Methodology](./lib/02_framework/methodology.md)
 
-3. [**Catalogue**](./src/03_catalogue/README.md)
+3. [**Catalogue**](./lib/03_catalogue/README.md)
 
-   3.1. [Setup & Threat Modelling](./src/03_catalogue/setup_threat_modelling/README.md)
+   3.1. [Setup & Threat Modelling](./lib/03_catalogue/setup_threat_modelling/README.md)
 
-   3.2. [Network, API & Wireless Testing](./src/03_catalogue/network_api_wireless/README.md)
+   3.2. [Network, API & Wireless Testing](./lib/03_catalogue/network_api_wireless/README.md)
 
-   3.3. [Firmware Analysis](./src/03_catalogue/firmware/README.md)
+   3.3. [Firmware Analysis](./lib/03_catalogue/firmware/README.md)
 
-   3.4. [Device Hardware & OS Security](./src/03_catalogue/device_hardware_os/README.md)
+   3.4. [Device Hardware & OS Security](./lib/03_catalogue/device_hardware_os/README.md)
 
-   3.5. [Correlation & Risk Evaluation](./src/03_catalogue/correlation_risk/README.md)
+   3.5. [Correlation & Risk Evaluation](./lib/03_catalogue/correlation_risk/README.md)
 
-   3.6. [Reporting & Deliverables](./src/03_catalogue/reporting_deliverables/README.md)
+   3.6. [Reporting & Deliverables](./lib/03_catalogue/reporting_deliverables/README.md)
 
 
 # Catalogue
@@ -40,7 +40,7 @@ The following is the list of items required during the assessment:
 
 `Status` column can be set for values similar to "Pass", "Fail", "N/A".
 
-`Severity` column can be set for values "0-10" or "N/A" with 0 as the lowest to 10 being the highest potential magnitude of harm or damage if a risk event occurs (how bad). Refer to the [2.3. Testing Methodology](./src/02_framework/methodology.md) for specific CVSS rating.
+`Severity` column can be set for values "0-10" or "N/A" with 0 as the lowest to 10 being the highest potential magnitude of harm or damage if a risk event occurs (how bad). Refer to the [2.3. Testing Methodology](./lib/02_framework/methodology.md) for specific CVSS rating.
 
 ## 3.1 Setup & Threat Modelling
 | Test ID | Phase / Test Name | Status | Severity | Notes / Evidence |
