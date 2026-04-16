@@ -13,11 +13,11 @@ This IoT Device Security Assessment project presents the design and development 
 
 2. [**IoT Security Testing Framework**](./lib/02_framework/README.md)
 
-   2.1. [IoT Device Model](./lib/02_framework/device_model.md)
+   2.1. [Entity Model](./lib/02_framework/device_model.md)
 
    2.2. [Threat Model](./lib/02_framework/threat_model.md)
 
-   2.3. [Testing Methodology](./lib/02_framework/methodology.md)
+   2.3. [Validation Framework](./lib/02_framework/methodology.md)
 
 3. [**Catalogue**](./lib/03_catalogue/README.md)
 
