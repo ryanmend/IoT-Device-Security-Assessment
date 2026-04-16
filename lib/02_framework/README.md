@@ -1,4 +1,4 @@
-# 2. Entity Security Testing Framework
+# 2. IoT Security Testing Framework
 
 2.1. [**Entity Model**](./device_model.md)
 
