@@ -1,6 +1,6 @@
 # 2.1. IoT Device Model
 
-This chapter will focus on the IoT device model representing the general structure of IoT devices. Creating the device model is the first step in order to achieve the goals defined in the solution approach (see [1. Introduction](../01_introduction/README.md)). All further steps, which will be described in [2.2. Threat Model](./threat_model.md), [2.3. Methodology](./methodology.md) and [3. Test Case Catalog](../03_test_cases/README.md), will be based on the device model.
+This section establishes the foundational IoT device model, providing a structural blueprint of IoT architecture. Developing this model is a prerequisite for our proposed solution approach (see [1. Introduction](../01_introduction/README.md)). Furthermore, this model serves as the structural basis for all subsequent stages of the framework, including [Threat Modeling](./threat_model.md), [Methodology](./methodology.md), and the [Vulnerability Catalogue](./03_catalogue/README.md).
 
 ## Device Model Scheme
 
