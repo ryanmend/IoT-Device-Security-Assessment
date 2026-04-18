@@ -1,6 +1,6 @@
 # 2.1. Entity Model
 
-This section establishes the foundational IoT device model, providing a structural blueprint of IoT architecture. Developing this model is a prerequisite for our proposed solution approach (see [1. Introduction](../01_introduction/README.md)). Furthermore, this model serves as the structural basis for all subsequent stages of the framework, including [Threat Modeling](./threat_model.md), [Methodology](./methodology.md), and the [Catalogue](../03_catalogue/README.md).
+This section establishes the foundational IoT device model, providing a structural blueprint of IoT architecture. Developing this model is a prerequisite for our proposed solution approach (see [1. Introduction](../01_introduction/README.md)). Furthermore, this model serves as the structural basis for all subsequent stages of the framework, including [Threat Modeling](./threat_model.md), [Framework](./framework.md), and the [Catalogue](../03_catalogue/README.md).
 
 ## Device Model Scheme
 
