@@ -6,7 +6,7 @@ The chapter first demonstrates how to integrate this methodology into broader wo
 
 Unlike generic IoT penetration testing frameworks, this methodology employs a specialable yet comprehensive approach tailored specifically for IoT cameras. It identifies security issues highly relevant to camera ecosystems without being constrained by specific technologies or standards. This provides greater flexibility than traditional frameworks, an essential advantage given the rapid evolution of camera hardware and software. While highly adaptable to various camera technologies, it remains robust enough for further specialization.
 
-Note that test cases applicable to multiple components are excluded from this chapter; the complete [3. Test Case Catalog](../03_catalogue/README.md) is available in its dedicated section.
+Note that test cases applicable to multiple components are excluded from this chapter; the complete [3. Catalogue](../03_catalogue/README.md) is available in its dedicated section.
 
 
 ## Description of the Hierarchic Structure
