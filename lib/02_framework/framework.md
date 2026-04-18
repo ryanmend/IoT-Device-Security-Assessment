@@ -1,12 +1,12 @@
 # 2.3. Validation Framework
 
-This chapter outlines a specialized methodology for conducting IoT camera penetration tests. Building upon the concepts established in the [2.1 IoT Device Model](./device_model.md) and [2.2 Threat Model](./threat_model.md), this approach serves as a supplement to existing penetration testing frameworks. The methodology details the essential testing facets required for an IoT camera assessment, providing both a comprehensive catalog of test cases per device component and a structured checklist for streamlined tracking. As established in previous chapters, the selection of specific test cases is driven by the results of the previously defined device and threat models.
+This chapter outlines a specialized methodology for conducting IoT camera penetration tests. Building upon the concepts established in the [2.1 Entity Model](./entity_model.md) and [2.2 Threat Model](./threat_model.md), this approach serves as a supplement to existing penetration testing frameworks. The methodology details the essential testing facets required for an IoT camera assessment, providing both a comprehensive catalog of test cases per device component and a structured checklist for streamlined tracking. As established in previous chapters, the selection of specific test cases is driven by the results of the previously defined device and threat models.
 
 The chapter first demonstrates how to integrate this methodology into broader workflows and identifies the stages at which its core concepts should be applied. Through the structured checklist, testers can systematically ensure that all critical components—including firmware, network interfaces, software, and physical enclosures—are thoroughly assessed. Following this, we explain various testing techniques applicable across multiple test cases. Finally, the structural logic of the test case catalog is detailed.
 
 Unlike generic IoT penetration testing frameworks, this methodology employs a specialable yet comprehensive approach tailored specifically for IoT cameras. It identifies security issues highly relevant to camera ecosystems without being constrained by specific technologies or standards. This provides greater flexibility than traditional frameworks, an essential advantage given the rapid evolution of camera hardware and software. While highly adaptable to various camera technologies, it remains robust enough for further specialization.
 
-Note that test cases applicable to multiple components are excluded from this chapter; the complete [3. Test Case Catalog](../03_test_cases/README.md) is available in its dedicated section.
+Note that test cases applicable to multiple components are excluded from this chapter; the complete [3. Test Case Catalog](../03_catalogue/README.md) is available in its dedicated section.
 
 
 ## Description of the Hierarchic Structure
@@ -19,7 +19,7 @@ The catalog of test cases will follow a hierarchic (tree) structure. Starting fr
 
 The following hierarchic levels and types of nodes are defined:
 
-- **Component:** The first main hierarchy level is the component (see [2.1. IoT Device Model](./device_model.md)). The type of component (device-internal element/interface) was not included in the hierarchy for the sake of simplicity and due to the lack of added value.
+- **Component:** The first main hierarchy level is the component (see [2.1. Entity Model](./entity_model.md)). The type of component (device-internal element/interface) was not included in the hierarchy for the sake of simplicity and due to the lack of added value.
 
   *Short representation: 2 - 5 uppercase alphabetic characters*
 
@@ -31,7 +31,7 @@ The following hierarchic levels and types of nodes are defined:
 
   *Examples: IDSA-\*-AUTHZ, IDSA-\*-INFO, IDSA-\*-CONF*
 
-- **Test Case:** The third main hierarchy level is the test case. See [3. Test Case Catalog](../03_test_cases/README.md) for more details.
+- **Test Case:** The third main hierarchy level is the test case. See [3. Catalogue](../03_catalogue/README.md) for more details.
 
   *Short representation: three-digit incremental number of the test case.*
 
