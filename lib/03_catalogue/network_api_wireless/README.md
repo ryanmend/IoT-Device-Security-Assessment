@@ -2,7 +2,7 @@ The following is the list of items required during the assessment:
 
 `Status` column can be set for values similar to "Pass", "Fail", "N/A".
 
-`Severity` column can be set for values "0-10" or "N/A" with 0 as the lowest to 10 being the highest potential magnitude of harm or damage if a risk event occurs (how bad). Refer to the [2.3. Testing Methodology](./src/02_framework/methodology.md) for specific CVSS rating.
+`Severity` column can be set for values "0-10" or "N/A" with 0 as the lowest to 10 being the highest potential magnitude of harm or damage if a risk event occurs (how bad). Refer to the [2.3. Validation Framework](./lib/02_framework/framework.md) for specific CVSS rating.
 
 ## 3.2 Network, API & Wireless Testing
 | Test ID | Phase / Test Name | Status | Severity | Notes / Evidence |
