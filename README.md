@@ -92,5 +92,5 @@ The following is the list of items required during the assessment:
 We sincerely thank Professor Mandeep Pannu for her mentorship. Her expertise in IoT security, strategic guidance on our presentation, and constant encouragement were fundamental to the success of this assessment framework.
 
 * Amer Al Sous
-* Waleed Kuvailid
 * Ryan Mendoza
+* Waleed Kuvailid
